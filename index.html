@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>🌍 AI Language Translation Tool</h2>
+
+        <textarea id="text" placeholder="Enter text here..."></textarea>
+
+        <div class="selectors">
+            <select id="source"> 
+                <option value="en">English</option>
+                <option value="ta">Tamil</option>
+                <option value="hi">Hindi</option>
+                <option value="fr">French</option>
+            </select>
+
+            <select id="target">
+                <option value="ta">Tamil</option>
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
+
+        <button onclick="translateText()">Translate</button>
+
+        <div id="loading" class="hidden">Translating...</div>
+
+        <h3>Translated Text:</h3>
+        <p id="result"></p>
+
+        <div class="buttons">
+            <button onclick="copyText()">Copy</button>
+            <button onclick="speakText()">🔊 Speak</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
